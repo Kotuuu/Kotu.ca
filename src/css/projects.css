@@ -1,0 +1,26 @@
+/* projects.css */
+@import url("styles.css");
+
+/* Page-specific styles */
+
+/* Highlight active nav link */
+.nav-links li a.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* Projects grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project card overrides */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.2);
+}

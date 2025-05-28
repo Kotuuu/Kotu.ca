@@ -1,0 +1,33 @@
+/* Import base theme */
+@import url("styles.css");
+
+/* === About Section Overrides === */
+#about {
+  background-color: var(--color-surface);
+}
+
+/* === Skills Table Styling === */
+.skills-table-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.skills-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  vertical-align: top;
+}
+
+.skills-table tr:last-child td {
+  border-bottom: none;
+}

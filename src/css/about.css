@@ -1,0 +1,82 @@
+/* about.css */
+@import url("styles.css");
+
+/* Dark panels for each semantic section */
+#about-intro,
+#education,
+#skills,
+#projects,
+#extracurricular,
+#experience {
+  background-color: var(--color-surface);
+}
+
+/* Consistent vertical spacing */
+section.section {
+  padding: 2rem 0;
+}
+
+/* Centered headings */
+h2, h3, h4 {
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Intro paragraph */
+#about-intro p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+/* Paragraph blocks for content sections */
+section#education p,
+section#projects p,
+section#extracurricular p,
+section#experience p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+/* Titles within paragraphs */
+section#education p strong,
+section#projects p strong,
+section#extracurricular p strong,
+section#experience p strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+/* Skills table styling */
+.skills-table-wrapper {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.skills-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  vertical-align: top;
+}
+.skills-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Extra space before the “Back to Home” button */
+#experience .text-center {
+  margin-top: 2rem;
+}

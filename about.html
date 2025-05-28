@@ -1,0 +1,145 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Kotu.ca</title>
+  <!-- Base styles + About page overrides -->
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="src/css/about.css">
+</head>
+<body>
+  <!-- === Navigation Bar === -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h1 class="nav-logo">Kotu.ca</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Intro -->
+    <section id="about-intro" class="section">
+      <div class="container">
+        <h2 class="text-center mb-2">About Me</h2>
+        <p class="text-center text-muted mb-4">
+          As an Information Technology student at York University, I’m passionate about building functional 
+          and efficient digital solutions. I enjoy working on personal projects that challenge my creativity 
+          and technical understanding, from developing full-stack web applications to managing my own cloud VMs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <h3 class="text-center mb-2">Education</h3>
+        <p>
+          <strong>York University</strong> Bachelor of Arts (Hons) in Information Technology<br>
+          September 2022 – Expected April 2026<br>
+          Relevant coursework includes Systems Analysis & Design, Systems Architecture, Object-Oriented Programming,
+          Database Systems, User Interface Design, and Data Communications & Networks.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h3 class="text-center mb-2">Skills</h3>
+        <div class="skills-table-wrapper mb-4">
+          <table class="skills-table">
+            <tr>
+              <td>Deploying &amp; managing VMs (ESXi, VMware Workstation)</td>
+              <td>Troubleshooting hardware &amp; software (Windows &amp; Linux)</td>
+            </tr>
+            <tr>
+              <td>Programming: Java, Python &amp; C++</td>
+              <td>Web hosting, DNS management &amp; domain configuration</td>
+            </tr>
+            <tr>
+              <td>Front-end &amp; Back-end development (HTML, JavaScript, CSS)</td>
+              <td>Technical support &amp; diagnostics in troubleshooting</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="text-center mb-2">Projects</h3>
+        <p>
+          <strong>Personal Profile Web Application</strong> 2025<br>
+          Responsive multi-page personal website featuring user authentication, blog posting, contact form, and fare calculator.<br>
+          Utilized HTML, CSS, Bootstrap, and JavaScript to build interactive UI components with localStorage for client-side data persistence.<br>
+          Implemented dynamic content rendering and CRUD operations across blog and contact modules.<br>
+          <em>Technologies:</em> HTML, CSS, JavaScript, Bootstrap, localStorage.
+        </p>
+        <p>
+          <strong>Self-Hosted Cloud Infrastructure</strong> 2025<br>
+          Deployed and managed multiple virtual machines on a personal Linux cloud server.<br>
+          Configured dedicated networking and domain routing (Kotu.ca) for persistent workspaces and remote server hosting.<br>
+          <em>Technologies:</em> Linux, ESXi, SSH, Tailscale, DNS, No-IP, custom domain routing.
+        </p>
+        <p>
+          <strong>Electricity Billing Program</strong> 2023<br>
+          Built a desktop application in Java using Javax Swing GUI to monitor and calculate electricity usage and billing for multiple users.<br>
+          Integrated CSV-based data storage for efficient tracking and management of billing records.<br>
+          Applied principles of Abstraction, Polymorphism, Inheritance, Encapsulation, and clean object-oriented architecture.<br>
+          <em>Technologies:</em> Java, Javax Swing, CSV I/O, Object-Oriented Programming.
+        </p>
+      </div>
+    </section>
+
+    <!-- Extracurricular -->
+    <section id="extracurricular" class="section">
+      <div class="container">
+        <h3 class="text-center mb-2">Extracurricular Activities</h3>
+        <p>
+          <strong>IT Support Mentoring</strong> 2023 – 2025<br>
+          Mentored firsthand by an IT Support Specialist at Starport Managed Services on challenges and problems directly applicable to real-world environments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h3 class="text-center mb-2">Work Experience</h3>
+        <p>
+          <strong>Lifeguard / Swim Instructor</strong> YMCA &amp; City of Vaughan (Jul 2022–Present)<br>
+          Instructed children of various ages in swimming, developed their confidence and leadership skills, and ensured a safe and enjoyable environment. Communicated clearly with co-workers and patrons, enforced pool rules, handled customer issues with care, and maintained a positive attitude.
+        </p>
+        <p>
+          <strong>Administration</strong> Passaro Transport LTD (Aug–Sep 2022)<br>
+          Greeted customers via phone, performed data entry, and managed filing systems.
+        </p>
+        <p>
+          <strong>Volunteer Coach Support</strong> City of Vaughan, Vellore Village Community Centre (Aug–Sep 2018)<br>
+          Supported coaches in leading swim teams of 6+ students, developed and implemented instructional games, and provided encouragement and mediation to learners.
+        </p>
+        <p>
+          <strong>Grade Representative</strong> Music Council, Emily Carr Secondary School (2018–2019)<br>
+          Sponsored music department events for 40+ students, monitored and enforced safety behaviors, and ensured equipment maintenance and minor repairs.
+        </p>
+        <div class="text-center mt-4">
+          <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="section text-center text-muted">
+    <p>&copy; 2025 Kevin Phung. All rights reserved.</p>
+  </footer>
+</body>
+</html>
