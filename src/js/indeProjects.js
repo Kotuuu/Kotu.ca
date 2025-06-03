@@ -1,71 +1,55 @@
 // src/js/projects.js
 document.addEventListener('DOMContentLoaded', () => {
-  const projectsGrid = document.querySelector('.projects-grid');
-  const jsonPath = 'projects.json'; // adjust path if needed
-
-  fetch(jsonPath)
+  // 1. Fetch the JSON file (adjust path if your JSON is somewhere else)
+  fetch('projects.json')
     .then(response => {
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error('Network response was not ok');
       }
       return response.json();
     })
-    .then(projects => {
-      if (!Array.isArray(projects)) {
-        throw new Error('projects.json did not return an array');
-      }
-
-      // Shuffle the array and take the first two entries
-      const shuffled = projects.sort(() => 0.5 - Math.random());
+    .then(data => {
+      // 2. Shuffle the array and take the first two entries
+      const shuffled = data.sort(() => 0.5 - Math.random());
       const selected = shuffled.slice(0, 2);
 
-      // Build HTML for the two selected projects
-      let html = '';
-      selected.forEach(project => {
-        html += '<div class="card project-card">';
-        
-        // Title
-        if (project.title) {
-          html += `<h3>${project.title}</h3>`;
-        }
+      // 3. Find the container inside #projects
+      const container = document.querySelector('#projects .container');
+      if (!container) {
+        console.error('Could not find #projects .container in the DOM');
+        return;
+      }
 
-        // Year
-        if (project.year) {
-          html += `<p class="project-year">Year: ${project.year}</p>`;
-        }
+      // 4. Remove any existing .card elements under that container
+      container.querySelectorAll('.card').forEach(card => card.remove());
+
+      // 5. For each of the two selected projects, create a new .card
+      selected.forEach(project => {
+        const card = document.createElement('div');
+        card.classList.add('card', 'mb-4');
+
+        // Title
+        const titleEl = document.createElement('h3');
+        titleEl.textContent = project.title;
+        card.appendChild(titleEl);
 
         // Description
-        if (project.description) {
-          html += `<p>${project.description}</p>`;
-        }
+        const descEl = document.createElement('p');
+        descEl.textContent = project.description;
+        card.appendChild(descEl);
 
-        // Details
-        if (Array.isArray(project.details) && project.details.length) {
-          html += '<ul class="project-details">';
-          project.details.forEach(item => {
-            html += `<li>${item}</li>`;
-          });
-          html += '</ul>';
-        }
+        // “View Project” button (update href if you have a real link)
+        const linkEl = document.createElement('a');
+        linkEl.href = '#';
+        linkEl.classList.add('btn', 'btn-secondary');
+        linkEl.textContent = 'View Project';
+        card.appendChild(linkEl);
 
-        // Technologies
-        if (Array.isArray(project.technologies) && project.technologies.length) {
-          html += `<p class="project-tech"><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>`;
-        }
-
-        // Link (if provided in JSON; otherwise omit)
-        if (project.link) {
-          html += `<a class="btn btn-secondary" href="${project.link}" target="_blank" rel="noopener noreferrer">View Project</a>`;
-        }
-
-        html += '</div>';
+        // Append the new card into the Projects container
+        container.appendChild(card);
       });
-
-      // Insert the generated HTML into the grid container
-      projectsGrid.innerHTML = html;
     })
     .catch(error => {
-      console.error('Error loading projects:', error);
-      projectsGrid.innerHTML = '<p>Unable to load projects at this time.</p>';
+      console.error('Error loading projects.json:', error);
     });
 });
