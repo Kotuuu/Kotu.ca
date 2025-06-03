@@ -1,4 +1,3 @@
-// src/js/projects.js
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Fetch the JSON file (adjust path if your JSON is somewhere else)
   fetch('projects.json')
@@ -40,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // “View Project” button (update href if you have a real link)
         const linkEl = document.createElement('a');
-        linkEl.href = '#';
+        linkEl.href = 'projects.html';
         linkEl.classList.add('btn', 'btn-secondary');
         linkEl.textContent = 'View Project';
         card.appendChild(linkEl);
