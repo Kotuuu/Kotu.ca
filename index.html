@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +8,6 @@
   <link rel="stylesheet" href="src/css/index.css">
   <link rel="stylesheet" href="src/css/particles.css">
 </head>
-
 <body>
   <!-- === Navigation Bar === -->
   <nav class="navbar">
@@ -15,8 +15,8 @@
       <h1 class="nav-logo">KPhung.com</h1>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -28,30 +28,99 @@
     <div class="hero-content">
       <h1>Hi, I'm Kevin Phung</h1>
       <p class="text-muted">Web Developer • Designer • Tech Specialist</p>
-      <a href="projects.html" class="btn btn-primary mt-2">View My Work</a>
+      <a href="#projects" class="btn btn-primary mt-2">View My Work</a>
     </div>
   </div>
-
-  <!-- === About Section === -->
-  <section id="about" class="section">
-  <div class="container">
-    <h2 class="text-center mb-2">About Me</h2>
-    <p class="text-center text-muted mb-4">
-      As an Information Technology student at York University, I’m passionate about building functional and efficient digital solutions. I enjoy working on personal projects that challenge my creativity and technical understanding, whether it’s developing full-stack web applications or managing my own virtualized cloud environment. I’m always looking to expand my knowledge in systems, software, and modern web technologies through hands-on problem solving and exploration.
-    </p>
-
-    <div class="text-center">
-      <a href="about.html" class="btn btn-secondary">Learn More About Me</a>
-    </div>
-  </div>
-</section>
-
 
   <!-- === Projects Section === -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="text-center mb-4">Projects</h2>
+      <h2 class="text-center mb-4">My Projects</h2>
+      <div class="projects-grid">
+        <!-- Cards will be injected here by projectPrev.js -->
+      </div>
+    </div>
+  </section>  
 
+  <!-- === About Section === -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="text-center mb-2">About Me</h2>
+      <p class="text-center text-muted mb-4">
+        As an Information Technology student at York University, I’m passionate about building functional and efficient digital solutions. I enjoy working on personal projects that challenge my creativity and technical understanding, whether it’s developing full-stack web applications or managing my own virtualized cloud environment. I’m always looking to expand my knowledge in systems, software, and modern web technologies through hands-on problem solving and exploration.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <h3 class="text-center mb-2">Education</h3>
+      <p>
+        <strong>York University</strong> Bachelor of Arts (Hons) in Information Technology<br>
+        September 2022 – Expected April 2026<br>
+        Relevant coursework includes Systems Analysis & Design, Systems Architecture, Object-Oriented Programming,
+        Database Systems, User Interface Design, and Data Communications & Networks.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h3 class="text-center mb-2">Skills</h3>
+      <div class="skills-table-wrapper mb-4">
+        <table class="skills-table">
+          <tr>
+            <td>Deploying &amp; managing VMs (ESXi, VMware Workstation)</td>
+            <td>Troubleshooting hardware &amp; software (Windows &amp; Linux)</td>
+          </tr>
+          <tr>
+            <td>Programming: Java, Python &amp; C++</td>
+            <td>Web hosting, DNS management &amp; domain configuration</td>
+          </tr>
+          <tr>
+            <td>Front-end &amp; Back-end development (HTML, JavaScript, CSS)</td>
+            <td>Technical support &amp; diagnostics in troubleshooting</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extracurricular -->
+  <section id="extracurricular" class="section">
+    <div class="container">
+      <h3 class="text-center mb-2">Extracurricular Activities</h3>
+      <p>
+        <strong>IT Support Mentoring</strong> 2023 – 2025<br>
+        Mentored firsthand by an IT Support Specialist at Starport Managed Services on challenges and problems directly applicable to real-world environments.
+      </p>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h3 class="text-center mb-2">Work Experience</h3>
+      <p>
+        <strong>Lifeguard / Swim Instructor</strong> YMCA &amp; City of Vaughan (Jul 2022–Present)<br>
+        Instructed children of various ages in swimming, developed their confidence and leadership skills, and ensured a safe and enjoyable environment. Communicated clearly with co-workers and patrons, enforced pool rules, handled customer issues with care, and maintained a positive attitude.
+      </p>
+      <p>
+        <strong>Administration</strong> Passaro Transport LTD (Aug–Sep 2022)<br>
+        Greeted customers via phone, performed data entry, and managed filing systems.
+      </p>
+      <p>
+        <strong>Volunteer Coach Support</strong> City of Vaughan, Vellore Village Community Centre (Aug–Sep 2018)<br>
+        Supported coaches in leading swim teams of 6+ students, developed and implemented instructional games, and provided encouragement and mediation to learners.
+      </p>
+      <p>
+        <strong>Grade Representative</strong> Music Council, Emily Carr Secondary School (2018–2019)<br>
+        Sponsored music department events for 40+ students, monitored and enforced safety behaviors, and ensured equipment maintenance and minor repairs.
+      </p>
+      <div class="text-center mt-4">
+        <a href="index.html" class="btn btn-secondary">Back to Top</a>
       </div>
     </div>
   </section>
@@ -59,7 +128,7 @@
   <!-- === Contact Section === -->
   <section id="contact" class="section" style="background-color: var(--color-surface);">
     <div class="container text-center">
-      <h2>Get In Touch</h2>
+      <h2>Get In Touch at PhungKevinP@gmail.com</h2>
       <p class="text-muted">Let’s build something great together.</p>
       <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
     </div>
@@ -72,6 +141,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="src/js/particles-config.js"></script>
-  <script src="src/js/indeProjects.js"></script>
+  <script src="src/js/projectPrev.js"></script>
 </body>
 </html>

@@ -105,14 +105,16 @@
   .text-center { text-align: center; }
 
   /* === Navbar === */
-  .navbar {
-    background-color: #0f172a; /* Deeper night blue */
-    padding: 0.5rem 0; /* Reduced vertical padding */
-    border-bottom: 1px solid var(--color-border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+.navbar {
+  background-color: #0f172a;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  position: fixed; /* changed from sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
   
   .nav-container {
     display: flex;
@@ -145,10 +147,6 @@
   
 html, body {
     height: 100%;
-}
-
-#about {
-  background-color: var(--color-surface);
 }
 
 .about-list {

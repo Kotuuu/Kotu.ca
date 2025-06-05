@@ -2,7 +2,7 @@
 @import url("styles.css");
 
 /* === About Section Overrides === */
-#about {
+#projects {
   background-color: var(--color-surface);
 }
 
