@@ -1,33 +1,33 @@
 [
-    {
-      "title": "Personal Profile Web Application",
-      "year": 2025,
-      "description": "Responsive multi-page personal website featuring user authentication, blog posting, contact form, and fare calculator.",
-      "details": [
-        "Utilized HTML, CSS, Bootstrap, and JavaScript to build interactive UI components with localStorage for Client-side data persistence.",
-        "Implemented dynamic content rendering and CRUD operations across blog and contact modules."
-      ],
-      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "localStorage"]
-    },
-    {
-      "title": "Self-Hosted Cloud Infrastructure",
-      "year": 2025,
-      "description": "Deployed and managed multiple virtual machines on a personal cloud server using Linux.",
-      "details": [
-        "Configured dedicated networking and domain routing (Kotu.ca) for persistent workspaces and remote server hosting."
-      ],
-      "technologies": ["Linux", "ESXI", "SSH", "Tailscale", "DNS", "NoIP", "Custom Domain Routing"]
-    },
-    {
-      "title": "Electricity Billing Program",
-      "year": 2023,
-      "description": "Desktop application in Java using Javax Swing GUI to monitor and calculate electricity usage and billing for multiple users.",
-      "details": [
-        "Integrated CSV-based data storage for efficient tracking & management of billing records.",
-        "Applied principles of Abstraction, Polymorphism, Inheritance, Encapsulation and clean object-oriented architecture.",
-        "Leveraged modular JavaScript design patterns for frontend logic and user interaction."
-      ],
-      "technologies": ["Java", "Javax Swing", "CSV I/O", "Object-Oriented Programming"]
-    }
-  ]
-  
+  {
+    "title": "Personal Profile Web Application",
+    "year": 2025,
+    "description": "Responsive multi-page personal website featuring user authentication, blog posting, contact form, and fare calculator.",
+    "details": [
+      "Utilized HTML, CSS, Bootstrap, and JavaScript to build interactive UI components with localStorage for Client-side data persistence.",
+      "Implemented dynamic content rendering and CRUD operations across blog and contact modules."
+    ],
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "localStorage"]
+  },
+  {
+    "title": "Self-Hosted Cloud Infrastructure",
+    "year": 2025,
+    "description": "Deploy and manage multiple VMs on a personal cloud server running on ESXI Host.",
+    "details": [
+      "Configure network port forwards for external users to connect (e.g. Hosted Servers).",
+      "Configure Dynamic DNS routing using GoDaddy domain names."
+    ],
+    "technologies": ["ESXI", "VMware", "Tailscale", "NoIP", "DNS records", "custom domain routing"]
+  },
+  {
+    "title": "Electricity Billing Program",
+    "year": 2023,
+    "description": "Built a desktop application in Java using Javax Swing GUI to monitor and calculate electricity usage and billing for multiple users.",
+    "details": [
+      "Integrated CSV-based data storage for efficient tracking & management of billing records.",
+      "Applied principles of Abstraction, Polymorphism, Inheritance, Encapsulation and clean object-oriented architecture.",
+      "Leveraged modular JavaScript design patterns for frontend logic and user interaction."
+    ],
+    "technologies": ["Java", "Javax Swing", "CSV I/O", "Object-Oriented Programming"]
+  }
+]

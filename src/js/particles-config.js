@@ -8,7 +8,7 @@ particlesJS("particles-js", {
         }
       },
       "color": {
-        "value": "#ffffff" // star color
+        "value": "#ffffff"
       },
       "shape": {
         "type": "circle"
@@ -28,7 +28,7 @@ particlesJS("particles-js", {
         "random": true
       },
       "line_linked": {
-        "enable": false // no connecting lines
+        "enable": false
       },
       "move": {
         "enable": true,
